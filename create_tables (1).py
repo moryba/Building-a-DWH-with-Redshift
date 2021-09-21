@@ -12,7 +12,7 @@ def drop_tables(cur, conn):
 
 def create_tables(cur, conn):
     """this func permits to create tables
-        are not exist yet"""
+        don't exist yet"""
     for query in create_table_queries:
         cur.execute(query)
         conn.commit()
